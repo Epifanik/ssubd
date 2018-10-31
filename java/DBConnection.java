@@ -6,7 +6,7 @@ public class DBConnection {
 
     public void connect() throws ClassNotFoundException, IllegalAccessException, InstantiationException, SQLException {
             String user = "postgres";
-            String pass = "epifanik";
+            String pass = "123456";
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/kursova", user, pass);
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
